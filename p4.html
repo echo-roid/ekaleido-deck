@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>ekaleido</title>
+    </head>
+<body>
+
+
+    <section class="headeres"> 
+        <div>
+              <img src="./assets/logoek.png" alt="" class="logohead">
+        </div>
+     
+  </section>
+
+
+  <section class="">
+         <div class="dflex crouselsection">
+            <div class="leftbox">
+                    <h1 class="who mb">INTERACTIVE <br> ADS</h1>
+                    <p class="mb">Creative can be of many types and can <br> consist many innovative ideas like <br> parallax effect, swiping, scratching, word <br> jumbles, etc.
+                    </p>
+ 
+                      <div class="dflex gapaarow mb">
+                         <div class="arrowDiv">
+                            <div class="text-right">
+                                <a href="./p3.html" class="text-noneline">
+                                <p class="mb10 orange text-noneline">Previous</p>
+                            </a>
+                            </div>
+                            <a href="./p4.html">
+                            <img src="./assets/leftarrowlong.png" class="arrowlink" alt="">
+                        </a>
+                         </div>
+
+                         <div class="arrowDiv">
+                            
+                            <div class=" ">
+                                <a href="./p7.html" class="text-noneline">
+                                <p class="mb10 orange ">Next</p>
+                            </a>
+                            </div>
+                            <a href="./p7.html">
+                                <img src="./assets/arrow.png" class="arrowlink" alt="">
+                            </a>
+                         </div>
+                      </div>
+
+                        <div class="crouselwidth">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item"  data-item-number ="1"><div>
+                                    <h1 class="crousel mb10">01</h1>
+                                    <p class="smallcrousel">Interactive <br>
+                                        Ads</p>
+                                </div></div>
+                                <div class="item" data-item-number ="2"><div>
+                                    <h1 class="crousel mb10 black two">02</h1>
+                                    <p class="smallcrousel black two">Interactive <br>
+                                        Video</p>
+                                </div></div>
+                                <div class="item" data-item-number ="3"><div>
+                                    <h1 class="crousel mb10">03</h1>
+                                    <p class="smallcrousel">Instagram <br>
+                                        Filters</p>
+                                </div></div>
+                                <div class="item" data-item-number ="4"><div>
+                                    <h1 class="crousel mb10">04</h1>
+                                    <p class="smallcrousel">Interactive <br>
+                                        Ads</p>
+                                </div></div>
+                             
+                                
+                               
+                              
+                            </div>
+                        </div>
+                 
+            </div>
+
+            <div class="rightbxox">
+                    <img src="./assets/iframe.png" class="w100 h100" alt="">
+                    <!-- <img src="./assets/phoneimg.png" class="imgphone if" id="if1" alt="">
+                    <img src="./assets/Frame28.png" class="imgphone2 if" id="if3"  alt="">-->
+                    <img src="./assets/cookar.png" class="imgphone4 if" id="if2" alt=""> 
+
+
+                        <div id="if3"  class="if ">
+                            <img src="./assets/phoneimg.png" class="imgphone "  alt="">
+                            <video class="filterimg "  autoplay="" muted="" loop="" playsinlin="">
+                                <source  src="./assets/filter.mp4" type="video/mp4">
+                               
+                              </video>
+                        </div>
+                  
+                        <div id="if1" class="if" >
+                             <img src="./assets/blackframe.png" class="frameblack  " alt="">
+                             <video class="imgphone3 "  autoplay="" muted="" loop="" playsinlin="">
+                                <source  src="./assets/Blackberry.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                      
+                        <img src="./assets/imac.png" class="imgphone3 if" id="if4" alt="">
+                     <!-- <img src="./assets/BLACKBERRY.png" class="imgphone3 if" id="if4"  alt=""> -->
+            </div>
+         </div>
+    </section> 
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <script>
+
+
+
+$(document).ready(function(){
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    center: true,
+    dots: false,
+  });
+
+  // Function to update the center item color and current number
+  function updateCenterItem(event) {
+    // Remove the custom color class from all items
+    owl.find('.owl-item').removeClass('center-item');
+    
+    // Add the custom color class to the center item
+    var centerIndex = event.item.index;
+    var centerItem = owl.find('.owl-item').eq(centerIndex);
+    centerItem.addClass('center-item');
+    
+    // Get the current item number
+    var currentItemNumber = centerItem.find('.item').data('item-number');
+    console.log("Current item number:", currentItemNumber);
+
+    for (let index = 0; index < document.getElementsByClassName("if").length; index++) {
+        document.getElementsByClassName("if")[index].style.display = "none"
+   }
+    if(currentItemNumber ===1){
+            document.getElementById("if1").style.display="block"
+    }
+    if(currentItemNumber ===2){
+            document.getElementById("if2").style.display="block"
+    }
+    if(currentItemNumber ===3){
+            document.getElementById("if3").style.display="block"
+    }
+    if(currentItemNumber ===4){
+            document.getElementById("if4").style.display="block"
+    }
+  }
+
+  // Listen for the 'changed.owl.carousel' event
+  owl.on('changed.owl.carousel', updateCenterItem);
+
+  // Trigger the 'changed.owl.carousel' event to set the initial center item color
+  owl.trigger('changed.owl.carousel');
+});
+ </script>
+</body>
+</html>
+
