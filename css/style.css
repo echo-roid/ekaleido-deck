@@ -539,3 +539,13 @@ h5 {
   scale: 1.2;
   color: black;
 }
+
+
+.font17{
+  
+  font-size: 17px;
+
+}
+.owl-carousel.owl-drag .owl-item {
+  padding-top: 40px;
+}

@@ -70,9 +70,24 @@
                                 </div></div>
                                 <div class="item" data-item-number ="4"><div>
                                     <h1 class="crousel mb10">04</h1>
-                                    <p class="smallcrousel">Interactive <br>
-                                        Ads</p>
+                                    <p class="smallcrousel font17">PROGRAMMATIC <br>ADS <br>
+                                        </p>
                                 </div></div>
+
+
+                                <div class="item" data-item-number ="5"><div>
+                                    <h1 class="crousel mb10">05</h1>
+                                    <p class="smallcrousel font17">CTV ADS <br>
+                                        </p>
+                                </div></div>
+
+
+                                <div class="item" data-item-number ="6"><div>
+                                    <h1 class="crousel mb10">06</h1>
+                                    <p class="smallcrousel font17">NATIVE <br> ADS <br>
+                                        </p>
+                                </div></div>
+                                
                              
                                 
                                
@@ -84,8 +99,12 @@
 
             <div class="rightbxox">
                     <img src="./assets/iframe.png" class="w100 h100" alt="">
-                    <!-- <img src="./assets/phoneimg.png" class="imgphone if" id="if1" alt="">
-                    <img src="./assets/Frame28.png" class="imgphone2 if" id="if3"  alt="">-->
+                    
+                    <img src="./assets/framescreen.png" class="imgphone3 if" id="if6"  alt="">
+
+
+
+                    <img src="./assets/phoneimg.png" class="imgphone if" id="if1" alt="">
                     <img src="./assets/cookar.png" class="imgphone4 if" id="if2" alt=""> 
 
 
@@ -97,7 +116,7 @@
                               </video>
                         </div>
                   
-                        <div id="if1" class="if" >
+                        <div id="if5" class="if" >
                              <img src="./assets/blackframe.png" class="frameblack  " alt="">
                              <video class="imgphone3 "  autoplay="" muted="" loop="" playsinlin="">
                                 <source  src="./assets/Blackberry.mp4" type="video/mp4">
@@ -140,7 +159,6 @@ $(document).ready(function(){
     
     // Get the current item number
     var currentItemNumber = centerItem.find('.item').data('item-number');
-    console.log("Current item number:", currentItemNumber);
 
     for (let index = 0; index < document.getElementsByClassName("if").length; index++) {
         document.getElementsByClassName("if")[index].style.display = "none"
@@ -156,6 +174,13 @@ $(document).ready(function(){
     }
     if(currentItemNumber ===4){
             document.getElementById("if4").style.display="block"
+    }
+
+    if(currentItemNumber === 5){
+            document.getElementById("if5").style.display="block"
+    }
+    if(currentItemNumber === 6){
+            document.getElementById("if6").style.display="block"
     }
   }
 
